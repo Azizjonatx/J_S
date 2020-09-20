@@ -27,22 +27,13 @@ var firstNumber = prompt('Hohlagan soningizni kiriting');
 var secondNumber = prompt('Hohlagan soningizni kiriting');
 var thirdNumber = prompt('Hohlagan soningizni kiriting');
 
-if (firstNumber > secondNumber && firstNumber < thirdNumber) {
+if (firstNumber > secondNumber && firstNumber < thirdNumber || firstNumber < secondNumber && firstNumber > thirdNumber) {
     alert(firstNumber);
 }
-else if (secondNumber > firstNumber && secondNumber < thirdNumber) {
+else if (secondNumber > firstNumber && secondNumber < thirdNumber || secondNumber < firstNumber && secondNumber > thirdNumber) {
     alert(secondNumber);
 }
-else if (thirdNumber > secondNumber && thirdNumber < firstNumber) {
-    alert(thirdNumber);
-}
-else if (firstNumber < secondNumber && firstNumber > thirdNumber) {
-    alert(firstNumber);
-}
-else if (secondNumber < firstNumber && secondNumber > thirdNumber) {
-    alert(secondNumber);
-}
-else if (thirdNumber < secondNumber && thirdNumber > firstNumber) {
+else if (thirdNumber > secondNumber && thirdNumber < firstNumber || thirdNumber < secondNumber && thirdNumber > firstNumber) {
     alert(thirdNumber);
 }
 else {
