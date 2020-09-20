@@ -23,17 +23,17 @@ else {
     alert('Nimadur noto\'g\'ri ketdi')
 } */
 
-var firstNumber = prompt('Hohlagan soningizni kiriting');
-var secondNumber = prompt('Hohlagan soningizni kiriting');
-var thirdNumber = prompt('Hohlagan soningizni kiriting');
+var firstNumber = +prompt('Hohlagan soningizni kiriting');
+var secondNumber = +prompt('Hohlagan soningizni kiriting');
+var thirdNumber = +prompt('Hohlagan soningizni kiriting');
 
-if (firstNumber > secondNumber && firstNumber < thirdNumber || firstNumber < secondNumber && firstNumber > thirdNumber) {
+if (firstNumber > secondNumber && firstNumber < thirdNumber /* && !isNaN(firstNumber) */ || firstNumber < secondNumber && firstNumber > thirdNumber /* && !isNaN(firstNumber) */ ) {
     alert(firstNumber);
 }
-else if (secondNumber > firstNumber && secondNumber < thirdNumber || secondNumber < firstNumber && secondNumber > thirdNumber) {
+else if (secondNumber > firstNumber && secondNumber < thirdNumber /* && !isNaN(secondNumber) */ || secondNumber < firstNumber && secondNumber > thirdNumber /* && !isNaN(secondNumber) */) {
     alert(secondNumber);
 }
-else if (thirdNumber > secondNumber && thirdNumber < firstNumber || thirdNumber < secondNumber && thirdNumber > firstNumber) {
+else if (thirdNumber > secondNumber && thirdNumber < firstNumber /* && !isNaN(thirdNumber) */ || thirdNumber < secondNumber && thirdNumber > firstNumber /* && !isNaN(thirdNumber) */) {
     alert(thirdNumber);
 }
 else {
